@@ -7,17 +7,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://shiyongxu.github.io">
-  <title>记承天寺夜游 | 夏虫语冰 | blog</title>
+  <title>SpringCloud-day02 | 夏虫语冰 | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="宋代：苏轼 　　元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。">
-<meta name="keywords" content="poem">
+  <meta name="description" content="今日学习目标:  能够使用Feign进行远程调用   能够搭建Spring Cloud Gateway网关服务   能够配置Spring Cloud Gateway路由过滤器   能够编写Spring Cloud Gateway全局过滤器   能够搭建Spring Cloud Confifig配置中心服务   能够使用Spring Cloud Bus实时更新配置">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记承天寺夜游">
-<meta property="og:url" content="https:&#x2F;&#x2F;shiyongxu.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E8%AE%B0%E6%89%BF%E5%A4%A9%E5%AF%BA%E5%A4%9C%E6%B8%B8&#x2F;index.html">
+<meta property="og:title" content="SpringCloud-day02">
+<meta property="og:url" content="https:&#x2F;&#x2F;shiyongxu.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;SpringCloud-day02&#x2F;index.html">
 <meta property="og:site_name" content="夏虫语冰 | blog">
-<meta property="og:description" content="宋代：苏轼 　　元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。">
+<meta property="og:description" content="今日学习目标:  能够使用Feign进行远程调用   能够搭建Spring Cloud Gateway网关服务   能够配置Spring Cloud Gateway路由过滤器   能够编写Spring Cloud Gateway全局过滤器   能够搭建Spring Cloud Confifig配置中心服务   能够使用Spring Cloud Bus实时更新配置">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-03T05:47:34.167Z">
+<meta property="og:updated_time" content="2019-12-13T07:47:59.089Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="夏虫语冰 | blog" type="application/atom+xml">
@@ -191,14 +191,14 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="about-记承天寺夜游" class="article article-type-about " itemscope itemprop="blogPost">
+            <article id="post-SpringCloud-day02" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      记承天寺夜游
+      SpringCloud-day02
     </h1>
   
 
@@ -209,20 +209,276 @@ var _hmt = _hmt || [];
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/12/02/%E8%AE%B0%E6%89%BF%E5%A4%A9%E5%AF%BA%E5%A4%9C%E6%B8%B8/" class="archive-article-date">
-  	<time datetime="2019-12-02T09:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+<a href="/2019/12/11/SpringCloud-day02/" class="archive-article-date">
+  	<time datetime="2019-12-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="https://so.gushiwen.org/shiwen/default.aspx?cstr=%e5%ae%8b%e4%bb%a3" target="_blank" rel="noopener">宋代</a>：<a href="https://baike.baidu.com/item/%E8%8B%8F%E8%BD%BC/53906?fr=aladdin" target="_blank" rel="noopener">苏轼</a></p>
-<p>　　元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。</p>
+        <p><strong>今日学习目标:</strong></p>
+<ul>
+<li><p>能够使用Feign进行远程调用 </p>
+</li>
+<li><p>能够搭建Spring Cloud Gateway网关服务 </p>
+</li>
+<li><p>能够配置Spring Cloud Gateway路由过滤器 </p>
+</li>
+<li><p>能够编写Spring Cloud Gateway全局过滤器 </p>
+</li>
+<li><p>能够搭建Spring Cloud Confifig配置中心服务 </p>
+</li>
+<li><p>能够使用Spring Cloud Bus实时更新配置</p>
+</li>
+</ul>
 <a id="more"></a>
 
-<p>《记承天寺夜游》是宋代文学家<a href="https://baike.baidu.com/item/%E8%8B%8F%E8%BD%BC/53906" target="_blank" rel="noopener">苏轼</a>创作的一篇<a href="https://baike.baidu.com/item/%E5%8F%A4%E6%96%87/1591397" target="_blank" rel="noopener">古文</a>。文章对月夜景色作了美妙描绘，真实地记录了作者被贬黄州的一个生活片段，也体现了他与<a href="https://baike.baidu.com/item/%E5%BC%A0%E6%80%80%E6%B0%91/4925868" target="_blank" rel="noopener">张怀民</a>的深厚友谊与对知音甚少的无限感慨，同时表达了他壮志难酬的苦闷及自我排遣，表现了他旷达乐观的人生态度。全文情感真挚，言简义丰，起于当起，止于当止，如行云流水，一气呵成。 </p>
+<br>
 
+<br>
+
+<p><strong>复习:</strong></p>
+<ol>
+<li><p>微服务的特点( 优缺点 ) 背诵</p>
+</li>
+<li><p>get/post练习</p>
+</li>
+<li><p>restTemplate</p>
+<p>一个工程能调用另一个工程</p>
+</li>
+</ol>
+<br>
+
+<br>
+
+<h2 id="1-Feign"><a href="#1-Feign" class="headerlink" title="1. Feign"></a>1. Feign</h2><p>Feign主要作用: 自动根据参数拼接http请求地址</p>
+<p>原理: 底层是restTemplate+ribbon, 这样就写死了, 使用feign不需要再自己拼接url，拼接参数等等操作，一切都交给Feign去做。</p>
+<p>因为用了@LoadBalanced就不能再用String url = “<a href="http://localhost:9091/user/&quot;" target="_blank" rel="noopener">http://localhost:9091/user/&quot;</a> + id; 它会把它当成一个实例名</p>
+<br>
+
+<br>
+
+<p>####1.1 快速入门</p>
+<ol>
+<li><p>导入依赖</p>
+<p>在consumer-demo消费者项目中添加依赖坐标</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>在ConsumerApplication引导类上添加注解, 开启Feign功能</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.gateway;</span><br><span class="line"><span class="keyword">package</span> com.itheima.consumer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.client.loadbalancer.LoadBalanced;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.openfeign.EnableFeignClients;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Bean;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.client.RestTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@EnableFeignClients</span><span class="comment">//开启feign功能</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConsumerApplication</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(ConsumerApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="meta">@LoadBalanced</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> RestTemplate <span class="title">restTemplate</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> RestTemplate();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>需要加上@EnableDiscoveryClient, 来开启feign功能</p>
+</blockquote>
+<blockquote>
+<p>Feign中已经自动集成了Ribbon负载均衡，因此不需要自己定义RestTemplate进行负载均衡的配置。 </p>
+</blockquote>
+<blockquote>
+<p>@SpringBootApplication相当于这三个注解: </p>
+<ul>
+<li>@SpringBootApplication </li>
+<li>@EnableDiscoveryClient </li>
+<li>@EnableCircuitBreaker</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<ol start="3">
+<li><p>在consumer-demo工程中编写Feign的客户端</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.consumer.client;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.itheima.consumer.pojo.User;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.openfeign.FeignClient;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line"></span><br><span class="line"><span class="meta">@FeignClient</span>(<span class="string">"user-service"</span>)<span class="comment">//声明这是一个Feign客户端，同时通过 value 属性指定服务名称</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserClient</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/user/&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryById</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span>Long id)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="4">
+<li><p>在consumer-demo工程中编写新的控制器</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.consumer.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.itheima.consumer.client.UserClient;</span><br><span class="line"><span class="keyword">import</span> com.itheima.consumer.pojo.User;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/cf"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConsumerFeignController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> UserClient userClient;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryById</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span>Long id)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> userClient.queryById(id);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="5">
+<li><p>启动测试 </p>
+<p>访问: <a href="http://localhost:8080/cf/1" target="_blank" rel="noopener">http://localhost:8080/cf/1</a></p>
+<p>这样feign对访问地址起到了一种伪装作用, 也可以用作集合调用多个微服务, 集中返回一个大的json数据返回给前端</p>
+</li>
+</ol>
+<br>
+
+<br>
+
+<h4 id="1-2-Feign负载均衡及熔断"><a href="#1-2-Feign负载均衡及熔断" class="headerlink" title="1.2 Feign负载均衡及熔断"></a>1.2 Feign负载均衡及熔断</h4><p>可以Feign内置ribbon配置项和Hystrix熔断的Fallb配置</p>
+<p>负载均衡, 服务熔断, 请求压缩, 日志级别 都可以通过配置项在Feign中开启使用</p>
+<br>
+
+<br>
+
+<h2 id="2-Spring-Cloud-Geteway网关"><a href="#2-Spring-Cloud-Geteway网关" class="headerlink" title="2. Spring Cloud Geteway网关"></a>2. Spring Cloud Geteway网关</h2><p>网关的核心功能是: <strong>过滤和路由</strong></p>
+<p>Spring Cloud Geteway的核心就是一系列的过滤器, 可以将客户端的请求转发到不同的微服务</p>
+<h4 id="1-1-快速入门"><a href="#1-1-快速入门" class="headerlink" title="1.1 快速入门"></a>1.1 快速入门</h4><ol>
+<li><p>导入依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>heima-springcloud<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.itheima<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>heima-geteway<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编写feign启动引导类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.gateway;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.client.discovery.EnableDiscoveryClient;</span><br><span class="line"></span><br><span class="line"><span class="meta">@EnableDiscoveryClient</span><span class="comment">//开启服务注册与发现</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GatewayAppliacation</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(GatewayAppliacation<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>需要加上@EnableDiscoveryClient, 来开启feign功能</p>
+</blockquote>
+<blockquote>
+<p>@SpringBootApplication相当于这三个注解: </p>
+<ul>
+<li>@SpringBootApplication </li>
+<li>@EnableDiscoveryClient </li>
+<li>@EnableCircuitBreaker</li>
+</ul>
+</blockquote>
+</li>
+<li><p>编写Application.yml配置类</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">10010</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">api-gateway</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">gateway:</span>	<span class="comment">#网关</span></span><br><span class="line">      <span class="attr">routes:</span>	<span class="comment">#路由</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">id:</span> <span class="string">user-service-route</span>  <span class="comment">#路由id, 可以随意写</span></span><br><span class="line">        <span class="comment">#uri: http://127.0.0.1:9091  #代理的服务地址</span></span><br><span class="line">        <span class="attr">uri:</span> <span class="string">lb://user-service</span>  <span class="comment">#代理的服务地址, lb表示从eureka中获取具体服务 (面向服务的路由)</span></span><br><span class="line">        <span class="attr">predicates:</span> <span class="comment">#路由断言, 可以配置映射路径 (匹配规则)</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">Path=/user/**</span></span><br><span class="line">        <span class="comment">#- Path=/**	#匹配所有路径</span></span><br><span class="line">        <span class="comment"># - Path=/api/user/**</span></span><br><span class="line">        <span class="attr">filters:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">PrefixPath=/user</span>  <span class="comment">#添加请求路径的前缀, 如果添加了需要修改一下路由断言</span></span><br><span class="line">        <span class="comment">#StripPrefix=1 http://localhost:10010/api/user/8 --》http://localhost:9091/user/8</span></span><br><span class="line">        <span class="comment">#StripPrefix=2 http://localhost:10010/api/user/8 --》http://localhost:9091/8</span></span><br><span class="line">        <span class="comment">#- StripPrefix=1  #表示过滤一个路径, 2表示过滤两个路径, 以此类推</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br><span class="line">  <span class="attr">instance:</span></span><br><span class="line">    <span class="attr">prefer-ip-address:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="4">
+<li><p>启动测试</p>
+<p>访问：<a href="http://localhost:10010/user/8" target="_blank" rel="noopener">http://localhost:10010/user/8</a> </p>
+<p>将这个url转发到9091(user-service)这个微服务, 叫路由</p>
+</li>
+</ol>
+<br>
+
+<br>
+
+<h4 id="1-2-过滤器"><a href="#1-2-过滤器" class="headerlink" title="1.2 过滤器"></a>1.2 过滤器</h4><ol>
+<li><p>全局过滤器</p>
+<p>对所有url都有用, 打印一些日志, 鉴权,  判断url是否携带某个参数(例如token)</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>局部过滤器</p>
+<p>2.1 继承 </p>
+<p>2.2 实现</p>
+</li>
+</ol>
+<br>
+
+<br>
+
+<h2 id="3-Spring-Cloud-Config分布式配置中心"><a href="#3-Spring-Cloud-Config分布式配置中心" class="headerlink" title="3.  Spring Cloud Config分布式配置中心"></a>3.  Spring Cloud Config分布式配置中心</h2><p>支持把配置文件放在本地, 或GitHub, 码云</p>
+<p>Spring Cloud Config的作用: 可以通过修改在git仓库中的配置文件实现其他所有微服务的配置文件的修改, 进行集中式修改配置文件</p>
+<p>Config配置中心:  由于微服务拆分的比较细, 用于统一配置</p>
+<ol>
+<li><p>创建git远程仓库 </p>
+<p>选择语言-java     添加.gitignore-JetBrains    添加开源许可证Apache-2.0</p>
+</li>
+<li><p>在git仓库中新建配置文件<code>user-dev-yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="string">$&#123;port:9091&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/springcloud</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">root</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="comment"># 应用名</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">user-service</span></span><br><span class="line"></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">type-aliases-package:</span> <span class="string">com.itheima.user.pojo</span></span><br><span class="line"></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="comment"># EurekaServer地址, 多个地址以"," 隔开</span></span><br><span class="line">      <span class="comment">#defaultZone: http://127.0.0.1:10086/eureka,http://127.0.0.1:10087/eureka</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br><span class="line">  <span class="attr">instance:</span></span><br><span class="line">    <span class="comment"># 更倾向于使用ip, 而不是主机名</span></span><br><span class="line">    <span class="attr">prefer-ip-address:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># ip地址</span></span><br><span class="line">    <span class="attr">ip-address:</span> <span class="string">localhost</span></span><br><span class="line">    <span class="comment"># 续约间隔 默认30秒</span></span><br><span class="line">    <span class="attr">lease-renewal-interval-in-seconds:</span> <span class="number">90</span></span><br><span class="line">    <span class="comment"># 服务失效时间 默认90秒</span></span><br><span class="line">    <span class="attr">lease-expiration-duration-in-seconds:</span> <span class="number">30</span></span><br><span class="line"><span class="attr">test:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">shiyongxu3</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建配置中心微服务工程 </p>
+<p>添加依赖坐标</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">&lt;!--eureka注册中心客户端--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--配置中心--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-config-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="4">
+<li><p>创建启动引导类<code>ConfigServerApplication</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.config;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.config.server.EnableConfigServer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@EnableConfigServer</span><span class="comment">//引导类加注解@EnableConfigServer 开启配置中心服务</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConfigServerApplication</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(ConfigServerApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="5">
+<li><p>配置文件加上cloud: config: server: git : uri</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">12000</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">config-server</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">server:</span></span><br><span class="line">        <span class="attr">git:</span></span><br><span class="line">          <span class="attr">uri:</span> <span class="string">https://gitee.com/shiyongxu/heima-config.git</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="6">
+<li><p>启动测试</p>
+<p>开启eureka注册中心和配置中心, 然后访问<a href="http://localhost:12000/user-dev.yml" target="_blank" rel="noopener">http://localhost:12000/user-dev.yml</a></p>
+<p>如果能看到刚刚在git仓库中新建的配置文件就表明配置中心微服务搭建成功, 并且可以在gitee上修改user-dev.yml然后刷新上述测试地址也能及时到最新数据。 </p>
+</li>
+<li><p>在user-service用户微服务端获取配置中心配置</p>
+<p>7.1 在 user-service 工程中的pom.xml文件中添加如下依赖： </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-config<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.1.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>7.2 修改配置 </p>
+<p>删除 user-service 工程下的application.yml配置文件</p>
+<p>新建bootstrap.yml配置文件:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">user</span>  <span class="comment">#与远程仓库中配置文件的application保持一致</span></span><br><span class="line">      <span class="attr">profile:</span> <span class="string">dev</span>  <span class="comment">#远程仓库中的配置文件的profile保持一致</span></span><br><span class="line">      <span class="attr">label:</span> <span class="string">master</span> <span class="comment">#远程仓库中的版本保持一致</span></span><br><span class="line">      <span class="attr">discovery:</span></span><br><span class="line">        <span class="attr">enabled:</span> <span class="literal">true</span> <span class="comment">#使用配置中心</span></span><br><span class="line">        <span class="attr">service-id:</span> <span class="string">config-server</span></span><br><span class="line">  <span class="attr">rabbitmq:</span></span><br><span class="line">    <span class="attr">host:</span> <span class="string">localhost</span></span><br><span class="line">    <span class="attr">port:</span> <span class="number">5672</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">guest</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">guest</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>bootstrap.yml文件相当于项目启动时的引导文件，内容相对固定。</p>
+<p>application.yml文件是微服务的一些常规配置参数，变化比较频繁。</p>
+</blockquote>
+<p>7.3  启动测试</p>
+<p>开启eureka注册中心和config-server配置中心, 再开启user-service用户服务, 如果启动没有报错其实已经使用上配置中心内容，可以到注册中心查看，也可以访问一下请求路径来检验 user-service 的服务。</p>
+</li>
+</ol>
+<br>
+
+<br>
+
+<p>##4. Spring Cloud Bus服务总线 </p>
+<p>作用:  启动RabbitMQ通过修改码云中的配置文件后发送Post请求实现及时更新用户微服务中的配置项</p>
+<p>需求：在码云的git仓库中修改user-dev.yml配置文件，实现不重启user-service的情况下可以及时更新配置文件。</p>
+<ol>
+<li><p>启动RabbitMQ</p>
+</li>
+<li><p>修改配置中心config-server</p>
+<p>添加启动依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-bus<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-stream-binder-rabbit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>config-server的配置文件添加内容</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">12000</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">config-server</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">server:</span></span><br><span class="line">        <span class="attr">git:</span></span><br><span class="line">          <span class="attr">uri:</span> <span class="string">https://gitee.com/goheima/heima-config.git</span></span><br><span class="line">  <span class="comment"># 配置rabbitmq信息；如果是都与默认值一致则不需要配置</span></span><br><span class="line">  <span class="attr">rabbitmq:</span></span><br><span class="line">    <span class="attr">host:</span> <span class="string">localhost</span></span><br><span class="line">    <span class="attr">port:</span> <span class="number">5672</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">guest</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">guest</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br><span class="line"><span class="attr">management:</span></span><br><span class="line">  <span class="attr">endpoints:</span></span><br><span class="line">    <span class="attr">web:</span></span><br><span class="line">      <span class="attr">exposure:</span></span><br><span class="line">        <span class="comment"># 暴露触发消息总线的地址</span></span><br><span class="line">        <span class="attr">include:</span> <span class="string">bus-refresh</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>修改服务提供工程user-service</p>
+<p>user-service的依赖添加内容</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-bus<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-stream-binder-rabbit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-actuator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>user-service的配置文件添加内容</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置rabbitmq信息；如果是都与默认值一致则不需要配置</span></span><br><span class="line"><span class="attr">rabbitmq:</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">localhost</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">5672</span></span><br><span class="line">  <span class="attr">username:</span> <span class="string">guest</span></span><br><span class="line">  <span class="attr">password:</span> <span class="string">guest</span></span><br></pre></td></tr></table></figure>
+
+<p>UserController的修改</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.user.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.itheima.user.pojo.User;</span><br><span class="line"><span class="keyword">import</span> com.itheima.user.service.UserService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.context.config.annotation.RefreshScope;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/user"</span>)</span><br><span class="line"><span class="meta">@RefreshScope</span><span class="comment">//刷新配置        &lt;-- 在此添加新的注解</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> UserService userService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;test.name&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryById</span><span class="params">(@PathVariable Long id)</span> </span>&#123;</span><br><span class="line">        User user = userService.queryById(id);</span><br><span class="line">        System.out.println(<span class="string">"user为: "</span> + user);</span><br><span class="line">        System.out.println(<span class="string">"---------------------------"</span>);</span><br><span class="line">        System.out.println(<span class="string">"配置文件中的test.name为: "</span>+name);</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="4">
+<li><p>测试</p>
+<ol>
+<li>依次启动注册中心 eureka-server 、配置中心 config-server 、用户服务 user-service </li>
+<li>修改Git仓库中配置文件 user-dev.yml </li>
+<li>使用postman发送Post请求<a href="http://127.0.0.1:12000/actuator/bus-refresh" target="_blank" rel="noopener">http://127.0.0.1:12000/actuator/bus-refresh</a></li>
+<li>访问用户微服务(user-service)系统控制台查看输出结果 </li>
+</ol>
+</li>
+</ol>
+<br>
+
+<br>
       
 
       
@@ -275,16 +531,16 @@ var _hmt = _hmt || [];
     
     <br>
     <strong class="create-time">发布时间：</strong>
-    2019-12-02
+    2019-12-11
     <br>
     <strong class="update-time">最后更新：</strong>
-    2019-12-03
+    2019-12-13
     <br>
     <strong class="article-titles">本文标题：</strong>
-    <a href="https://shiyongxu.github.io/2019/12/02/记承天寺夜游/" title="记承天寺夜游" target="_blank">记承天寺夜游</a>
+    <a href="https://shiyongxu.github.io/2019/12/11/SpringCloud-day02/" title="SpringCloud-day02" target="_blank">SpringCloud-day02</a>
     <br>
     <strong class="article-url">本文链接：</strong>
-    <a href="https://shiyongxu.github.io/2019/12/02/记承天寺夜游/" title="记承天寺夜游" target="_blank">https://shiyongxu.github.io/2019/12/02/记承天寺夜游/</a>
+    <a href="https://shiyongxu.github.io/2019/12/11/SpringCloud-day02/" title="SpringCloud-day02" target="_blank">https://shiyongxu.github.io/2019/12/11/SpringCloud-day02/</a>
     <br>
     <strong class="copyright">版权声明：</strong>
     本作品采用
@@ -311,7 +567,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">poem</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -367,7 +623,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://shiyongxu.github.io/2019/12/02/%E8%AE%B0%E6%89%BF%E5%A4%A9%E5%AF%BA%E5%A4%9C%E6%B8%B8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://shiyongxu.github.io/2019/12/11/SpringCloud-day02/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -381,18 +637,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2019/12/03/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/12/Docker/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Hexo博客添加音乐插件
+          Docker入门
         
       </div>
     </a>
   
   
-    <a href="/2019/11/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/12/09/SpringCloud-day01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringCloud-day01</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -435,7 +691,7 @@ var _hmt = _hmt || [];
 
 <script>
 var gitment = new Gitment({
-  id: "Mon Dec 02 2019 17:50:00 GMT+0800",
+  id: "Wed Dec 11 2019 00:00:00 GMT+0800",
   owner: 'shiyongxu',
   repo: 'yilia-demo',
   oauth: {

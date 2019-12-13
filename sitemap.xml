@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://shiyongxu.github.io/2019/12/11/SpringCloud-2/</loc>
+    <loc>https://shiyongxu.github.io/2019/12/14/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF-day01/</loc>
     
-    <lastmod>2019-12-11T13:19:38.306Z</lastmod>
+    <lastmod>2019-12-13T07:49:21.626Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://shiyongxu.github.io/2019/12/09/SpringCloud%E5%85%A5%E9%97%A8/</loc>
+    <loc>https://shiyongxu.github.io/2019/12/12/Docker/</loc>
     
-    <lastmod>2019-12-11T02:25:33.782Z</lastmod>
+    <lastmod>2019-12-13T07:49:10.394Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shiyongxu.github.io/2019/12/11/SpringCloud-day02/</loc>
+    
+    <lastmod>2019-12-13T07:47:59.089Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shiyongxu.github.io/2019/12/09/SpringCloud-day01/</loc>
+    
+    <lastmod>2019-12-13T07:47:31.992Z</lastmod>
     
   </url>
   

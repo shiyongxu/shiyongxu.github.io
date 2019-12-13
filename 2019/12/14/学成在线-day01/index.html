@@ -7,17 +7,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://shiyongxu.github.io">
-  <title>SpringCloud入门 | 夏虫语冰 | blog</title>
+  <title>学成在线-day01 | 夏虫语冰 | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今日学习目标 :  能够使用RestTemplate发送请求 能够说出SpringCloud的作用 能够搭建Eureka注册中心 能够使用Robbon负载均衡 能够使用Hystrix熔断器">
-<meta name="keywords" content="java">
+  <meta name="description" content="商丘工学院16级, java新人">
+<meta name="keywords" content="xczx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringCloud入门">
-<meta property="og:url" content="https:&#x2F;&#x2F;shiyongxu.github.io&#x2F;2019&#x2F;12&#x2F;09&#x2F;SpringCloud%E5%85%A5%E9%97%A8&#x2F;index.html">
+<meta property="og:title" content="学成在线-day01">
+<meta property="og:url" content="https:&#x2F;&#x2F;shiyongxu.github.io&#x2F;2019&#x2F;12&#x2F;14&#x2F;%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF-day01&#x2F;index.html">
 <meta property="og:site_name" content="夏虫语冰 | blog">
-<meta property="og:description" content="今日学习目标 :  能够使用RestTemplate发送请求 能够说出SpringCloud的作用 能够搭建Eureka注册中心 能够使用Robbon负载均衡 能够使用Hystrix熔断器">
+<meta property="og:description" content="商丘工学院16级, java新人">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-11T02:25:33.782Z">
+<meta property="og:updated_time" content="2019-12-13T07:49:21.626Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="夏虫语冰 | blog" type="application/atom+xml">
@@ -191,14 +191,14 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SpringCloud入门" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-学成在线-day01" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      SpringCloud入门
+      学成在线-day01
     </h1>
   
 
@@ -209,199 +209,15 @@ var _hmt = _hmt || [];
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/12/09/SpringCloud%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2019-12-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-09</time>
+<a href="/2019/12/14/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF-day01/" class="archive-article-date">
+  	<time datetime="2019-12-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>今日学习目标 :</strong></p>
-<ul>
-<li>能够使用RestTemplate发送请求</li>
-<li>能够说出SpringCloud的作用</li>
-<li>能够搭建Eureka注册中心</li>
-<li>能够使用Robbon负载均衡</li>
-<li>能够使用Hystrix熔断器</li>
-</ul>
-<br>
-
-<br>
-
-<a id="more"></a>
-
-<h2 id="1-系统架构"><a href="#1-系统架构" class="headerlink" title="1. 系统架构"></a>1. 系统架构</h2><h4 id="1-1-微服务架构"><a href="#1-1-微服务架构" class="headerlink" title="1.1 微服务架构"></a>1.1 微服务架构</h4><p>概念: 是一套使用小服务或者单一业务来开发单个应用的方式或途径</p>
-<p>特点: </p>
-<ul>
-<li>职责更单一</li>
-<li>服务之间相互独立, 互不干扰</li>
-<li>总是松耦合</li>
-<li>面向服务(对外暴露REST api)</li>
-</ul>
-<blockquote>
-<p>与使用ESB ( 企业服务总线  ) 的SOA架构的区别: 微服务架构没有使用ESB, 但有服务治理注册中心, 业务粒度小</p>
-</blockquote>
-<br>
-
-<br>
-
-<h4 id="1-2-服务调用方式"><a href="#1-2-服务调用方式" class="headerlink" title="1.2 服务调用方式"></a>1.2 服务调用方式</h4><ul>
-<li><p>RPC: 基于socket, 速度快, 效率高;</p>
-<blockquote>
-<p>常见的应用代表: webservice, dubbo</p>
-</blockquote>
-</li>
-<li><p>HTTP: 基于TCP, 封装比较臃肿, 对服务和调用方没有任何技术,语言的限定, 自由灵活;  现在客户端浏览器和服务器端通信基本都采用http协议</p>
-<blockquote>
-<p>常见的应用代表: RESTful风格, SpringCloud</p>
-</blockquote>
-</li>
-</ul>
-<br>
-
-<br>
-
-<h4 id="1-3-Http客户端服务"><a href="#1-3-Http客户端服务" class="headerlink" title="1.3 Http客户端服务"></a>1.3 Http客户端服务</h4><p>一般有三种Http客户端</p>
-<ul>
-<li>HttpClient</li>
-<li>OKHttp</li>
-<li>URLConnection</li>
-</ul>
-<br>
-
-<br>
-
-<p>##2. RestTemplate</p>
-<p>Spring对http的客户端进行封装, 提供了一个模板工具类叫RestTemplate, 并且实现了对象与json的序列化和反序列化</p>
-<blockquote>
-<p>RestTemplate作用: 发请求 ; 请求另一个方法</p>
-</blockquote>
-<p>请求方式:</p>
-<ul>
-<li>get</li>
-</ul>
-<ul>
-<li><p>post</p>
-<ul>
-<li>参数有@RequestBody</li>
-<li>参数没有@RequestBody</li>
-</ul>
-</li>
-</ul>
-<br>
-
-<br>
-
-<h2 id="3-Spring-Cloud"><a href="#3-Spring-Cloud" class="headerlink" title="3. Spring Cloud"></a>3. Spring Cloud</h2><p>####3.1  Spring cloud介绍</p>
-<p>Spring boot是Spring的一套快速配置脚手架, 可以基于spring boot 快速开发单个微服务</p>
-<p>Spring cloud是基于Spring boot的, 为了解决微服务体系开发中的架构问题</p>
-<p>官网地址：<a href="https://spring.io/projects/spring-cloud" target="_blank" rel="noopener">http://projects.spring.io/spring-cloud</a></p>
-<blockquote>
-<p>例如: 微服务中请求路径是固定的( <a href="http://localhost/user/1" target="_blank" rel="noopener">http://localhost/user/1</a>) 如果采用了负载均衡之后, 客户端不能只访问同一台服务器, 应该轮询访问, 这是就要采用eureka注册中心提供不同的地址</p>
-</blockquote>
-<p>Spring cloud不是具体的技术, 而是很多组件的集合, 整合的组件有很多, 例如: </p>
-<ul>
-<li>eureka注册中心</li>
-<li>Gateway网关</li>
-<li>Ribbon负载均衡</li>
-<li>Feign服务调用</li>
-<li>Hystrix熔断器</li>
-</ul>
-<p>需要上面的组件时, 在pom文件中添加起步依赖即可</p>
-<br>
-
-<br>
-
-<p>####3.2 Spring cloud作用 </p>
-<p>Spring cloud是关注全局的服务治理框架,  Spring boot专注于快速、方便集成的单个个体</p>
-<p>一个工程想调用另一个工程的方法可以采用Spring cloud</p>
-<h6 id="3-2-1-添加启动器依赖"><a href="#3-2-1-添加启动器依赖" class="headerlink" title="3.2.1 添加启动器依赖"></a>3.2.1 添加启动器依赖</h6><p>消费者pom</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>heima-springcloud<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.itheima<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>consumer-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>消费者SpringBoot启动引导类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConsumerApplication</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(ConsumerApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> RestTemplate <span class="title">restTemplate</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> RestTemplate();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>消费者controller</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/consumer"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConsumerController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> RestTemplate restTemplate;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/test1/&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">test1</span><span class="params">(@PathVariable Long id)</span> </span>&#123;</span><br><span class="line">        String url = <span class="string">"http://localhost:9091/user/"</span> + id;</span><br><span class="line">        User user = restTemplate.getForObject(url, User<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        System.out.println(user.toString());</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<br>
-
-<br>
-
-<h2 id="4-Eureka-注册中心"><a href="#4-Eureka-注册中心" class="headerlink" title="4. Eureka 注册中心"></a>4. Eureka 注册中心</h2><p>Eureka提供服务注册和发现服务,  Eureka只做服务注册, 不提供服务也不消费服务, 可以使用web工程 使用Eureka, 可以用springboot方式搭建</p>
-<p>搭建eureka-server工程</p>
-<br>
-
-<br>
-
-<h2 id="5-负载均衡Ribbon"><a href="#5-负载均衡Ribbon" class="headerlink" title="5. 负载均衡Ribbon"></a>5. 负载均衡Ribbon</h2><p>负载均衡是一个算法, 可以通过该算法实现从地址列表中获取一个地址进行服务调用( 算法有两种, 默认是轮询, 随机 )</p>
-<p>在spring could中提供了负载均衡器:  Ribbon</p>
-<p>nginx属于服务器负载均衡</p>
-<p>ribbon属于客户端负载均衡</p>
-<p>可以根据服务名到Eureka服务中获取服务地址列表</p>
-<p>再根据或利用ribbon负载均衡算法从地址列表中获取一个服务地址并访问</p>
-<br>
-
-<br>
-
-<h2 id="6-Hystrix熔断器"><a href="#6-Hystrix熔断器" class="headerlink" title="6. Hystrix熔断器"></a>6. Hystrix熔断器</h2><p>Hystrix是Netflflix开源的一个延迟和容错库，用于隔离访问远程服务、第三方库，防止出现级联失败。</p>
-<p>作用: 可以在调用服务的时候, 在服务出现异常时进行服务降级, 避免一直长时间等待服务返回结果而出现雪崩效应</p>
-<p>有两种处理方式: </p>
-<ol>
-<li><p>线程隔离</p>
-<p>加速失败判断</p>
-</li>
-<li><p>服务降级</p>
-<p>及时返回服务失败演示</p>
-</li>
-</ol>
-<p>熔断原理: </p>
-<p>Hystrix的服务熔断机制，可以实现弹性容错；当服务请求情况好转之后，可以自动重连。</p>
-<p>Hystrix会对请求情况计数，当一定时间内失败请求百分比达到阈值，则触发熔断，断路器会完全打开。断路器打开，所有请求都会被降级。(默认失败比例的阈值是50%，请求次数最少不低于20次)</p>
-<p>通过断路的方式，将后续请求直接拒绝，一段时间（默认5秒）之后允许部分请求通过，如果调用成功则回到断路器关闭状态，否则继续打开，拒绝请求的服务。</p>
-<p>服务熔断参数配置:</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">hystrix:</span></span><br><span class="line">  <span class="attr">command:</span></span><br><span class="line">    <span class="attr">default:</span></span><br><span class="line">      <span class="attr">execution:</span></span><br><span class="line">        <span class="attr">isolation:</span></span><br><span class="line">          <span class="attr">thread:</span></span><br><span class="line">            <span class="attr">timeoutInMilliseconds:</span> <span class="number">2000</span> <span class="comment"># 超时时间 默认1秒</span></span><br><span class="line">      <span class="attr">circuitBreaker:</span></span><br><span class="line">        <span class="attr">errorThresholdPercentage:</span> <span class="number">50</span> <span class="comment"># 触发熔断错误比例阈值，默认值50%</span></span><br><span class="line">        <span class="attr">sleepWindowInMilliseconds:</span> <span class="number">10000</span> <span class="comment"># 熔断后休眠时长，默认值5秒</span></span><br><span class="line">        <span class="attr">requestVolumeThreshold:</span> <span class="number">10</span> <span class="comment"># 熔断触发最小请求次数，默认值是20</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
       
 
       
@@ -454,16 +270,16 @@ var _hmt = _hmt || [];
     
     <br>
     <strong class="create-time">发布时间：</strong>
-    2019-12-09
+    2019-12-14
     <br>
     <strong class="update-time">最后更新：</strong>
-    2019-12-11
+    2019-12-13
     <br>
     <strong class="article-titles">本文标题：</strong>
-    <a href="https://shiyongxu.github.io/2019/12/09/SpringCloud入门/" title="SpringCloud入门" target="_blank">SpringCloud入门</a>
+    <a href="https://shiyongxu.github.io/2019/12/14/学成在线-day01/" title="学成在线-day01" target="_blank">学成在线-day01</a>
     <br>
     <strong class="article-url">本文链接：</strong>
-    <a href="https://shiyongxu.github.io/2019/12/09/SpringCloud入门/" title="SpringCloud入门" target="_blank">https://shiyongxu.github.io/2019/12/09/SpringCloud入门/</a>
+    <a href="https://shiyongxu.github.io/2019/12/14/学成在线-day01/" title="学成在线-day01" target="_blank">https://shiyongxu.github.io/2019/12/14/学成在线-day01/</a>
     <br>
     <strong class="copyright">版权声明：</strong>
     本作品采用
@@ -490,7 +306,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">xczx</a>
         		</li>
       		
 		</ul>
@@ -546,7 +362,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://shiyongxu.github.io/2019/12/09/SpringCloud%E5%85%A5%E9%97%A8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://shiyongxu.github.io/2019/12/14/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF-day01/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -560,18 +376,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2019/12/11/SpringCloud-2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          SpringCloud 2
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/12/05/%E5%A6%82%E4%BD%95%E8%AE%A9%E7%99%BE%E5%BA%A6%E6%90%9C%E5%88%B0%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何让百度搜到你的博客</div>
+    <a href="/2019/12/12/Docker/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Docker入门</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -614,7 +421,7 @@ var _hmt = _hmt || [];
 
 <script>
 var gitment = new Gitment({
-  id: "Mon Dec 09 2019 00:00:00 GMT+0800",
+  id: "Sat Dec 14 2019 00:00:00 GMT+0800",
   owner: 'shiyongxu',
   repo: 'yilia-demo',
   oauth: {
@@ -740,6 +547,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">poem</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">xczx</a>
               </li>
             
             <div class="clearfix"></div>
