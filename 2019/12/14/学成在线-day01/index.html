@@ -9,15 +9,15 @@
   <link rel="dns-prefetch" href="https://shiyongxu.github.io">
   <title>学成在线-day01 | 夏虫语冰 | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="商丘工学院16级, java新人">
+  <meta name="description" content="项目概述 学成在线项目借鉴了MOOC（大型开放式网络课程，即MOOC（massive open online courses））的设计思想，是一个提供IT职业课程在线学习的平台，它为即将和已经加入IT领域的技术人才提供在线学习服务，用户通过在线学习、在线练习、在线考试等学习内容，最终掌握所学的IT技能，并能在工作中熟练应用。  学成在线采用B2B2C业务模式，即向企业或个人提供在线教育平台提供教学">
 <meta name="keywords" content="xczx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学成在线-day01">
 <meta property="og:url" content="https:&#x2F;&#x2F;shiyongxu.github.io&#x2F;2019&#x2F;12&#x2F;14&#x2F;%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF-day01&#x2F;index.html">
 <meta property="og:site_name" content="夏虫语冰 | blog">
-<meta property="og:description" content="商丘工学院16级, java新人">
+<meta property="og:description" content="项目概述 学成在线项目借鉴了MOOC（大型开放式网络课程，即MOOC（massive open online courses））的设计思想，是一个提供IT职业课程在线学习的平台，它为即将和已经加入IT领域的技术人才提供在线学习服务，用户通过在线学习、在线练习、在线考试等学习内容，最终掌握所学的IT技能，并能在工作中熟练应用。  学成在线采用B2B2C业务模式，即向企业或个人提供在线教育平台提供教学">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-13T07:49:21.626Z">
+<meta property="og:updated_time" content="2019-12-14T12:52:15.302Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="夏虫语冰 | blog" type="application/atom+xml">
@@ -217,7 +217,70 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><strong>项目概述</strong></p>
+<p>学成在线项目借鉴了MOOC（大型开放式网络课程，即MOOC（massive open online courses））的设计思想，是一个提供IT职业课程在线学习的平台，它为即将和已经加入IT领域的技术人才提供在线学习服务，用户通过在线学习、在线练习、在线考试等学习内容，最终掌握所学的IT技能，并能在工作中熟练应用。 </p>
+<p>学成在线采用B2B2C业务模式，即向企业或个人提供在线教育平台提供教学服务，老师和学生通过平台完成整个教学和学习的过程，市场上类似的平台有：网易云课堂、腾讯课堂等，学成在线的特点是IT职业课程在线教学。 </p>
+<a id="more"></a>
+
+<br>
+
+<br>
+
+<p><strong>CMS需求分析</strong></p>
+<p>CMS ( Content Management System ) :  内容管理系统</p>
+<p>本项目对内容的定位:  </p>
+<p>本项目作为一个大项的在线教育平台,  对CMS系统的定位是对各个网站 (子站点) 页面的管理,  主要管理由于运营需要而经常变动的页面,  从而实现根据运营需要快速进行页面开发,  上线的需求.</p>
+<br>
+
+<br>
+
+<p><strong>开发步骤</strong></p>
+<p>项目是基于前后端分离的架构进行开发，前后端分离架构总体上包括前端和服务端，通常是多人协作并行开发，开发步骤如下：</p>
+<p>1、需求分析</p>
+<p>梳理用户的需求，分析业务流程</p>
+<p>2、接口定义</p>
+<p>根据需求分析定义接口</p>
+<p>3、服务端和前端并行开发</p>
+<p>依据接口进行服务端接口开发。</p>
+<p>前端开发用户操作界面，并请求服务端接口完成业务处理。</p>
+<p>4、前后端集成测试</p>
+<p>最终前端调用服务端接口完成业务</p>
+<br>
+
+<br>
+
+
+
+<p><strong>工程搭建</strong></p>
+<p>1.静态门户工程搭建</p>
+<p>配置环境</p>
+<p>创建基础工程</p>
+<p>parent工程：父工程，提供依赖管理。</p>
+<p>common工程：通用工程，提供各层封装</p>
+<p>model工程：模型工程，提供统一的模型类管理</p>
+<p>utils工程：工具类工程，提供本项目所使用的工具类</p>
+<p>Api工程：接口工程，统一管理本项目的服务接口。</p>
+<p>导入父工程及其他工程</p>
+<p>导入CMS数据库</p>
+<p>定义页面查询接口</p>
+<p>2.安装Nginx</p>
+<p>解压nginx-1.14.0.zip到自己的计算机，双击nginx.exe即可运行。 </p>
+<p>访问 ：<a href="http://localhost" target="_blank" rel="noopener">http://localhost</a> </p>
+<p>3.在nginx中配置虚拟主机： </p>
+<p>nginx.conf配置文件</p>
+<p>E:/xc/xcEduUI/xc-ui-pc-startic-portal/ 本目录即为门户的主目录。 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/*</span></span><br><span class="line"><span class="comment">server&#123;</span></span><br><span class="line"><span class="comment">    listen       80;</span></span><br><span class="line"><span class="comment">    server_name  www.xuecheng.com;</span></span><br><span class="line"><span class="comment">    ssi on;	#在nginx虚拟主机中开通SSI</span></span><br><span class="line"><span class="comment">    ssi_silent_errors on;	#设置为on则在处理SSI文件出错时不输出错误信息</span></span><br><span class="line"><span class="comment">    location / &#123;</span></span><br><span class="line"><span class="comment">        alias   F:/teach/xcEdu/xcEduUI/xc-ui-pc-static-portal/;</span></span><br><span class="line"><span class="comment">        index  index.html;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>修改之后重新加载配置文件: 当前位置打开命令行输入  nginx.exe -s reload</p>
+<p>4.配置hosts文件 </p>
+<p>修改C:\Windows\System32\drivers\etc\hosts文件 </p>
+<p>添加一行内容 :   127.0.0.1 <a href="http://www.xuecheng.com" target="_blank" rel="noopener">www.xuecheng.com</a></p>
+<p>5.进入浏览器，输入<a href="http://www.xuecheng.com" target="_blank" rel="noopener">http://www.xuecheng.com</a> </p>
+<br>
+
+<br>
+
+
       
 
       
@@ -273,7 +336,7 @@ var _hmt = _hmt || [];
     2019-12-14
     <br>
     <strong class="update-time">最后更新：</strong>
-    2019-12-13
+    2019-12-14
     <br>
     <strong class="article-titles">本文标题：</strong>
     <a href="https://shiyongxu.github.io/2019/12/14/学成在线-day01/" title="学成在线-day01" target="_blank">学成在线-day01</a>
@@ -377,8 +440,8 @@ var _hmt = _hmt || [];
 <nav id="article-nav">
   
   
-    <a href="/2019/12/12/Docker/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Docker入门</div>
+    <a href="/2019/12/14/Swagger/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Swagger</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -551,6 +614,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">xczx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">swagger</a>
               </li>
             
             <div class="clearfix"></div>

@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="夏虫语冰 | blog">
 <meta property="og:description" content="Docker概述 Docker是一个开源的应用容器引擎，基于Go语言开发, 是一个运行在Linux上的软件。 Docker作用:  可以直接把测试环境拉取一个镜像完全复制 (将你的应用迁移, 将你的软件运输) Docker应用场景:   Web 应用的自动化打包和发布 (制作镜像) 自动化测试和持续集成、发布 (可持续集成) 在服务型环境中部署和调整数据库或其他的后台应用 (安装各种组件)">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-13T07:49:10.394Z">
+<meta property="og:updated_time" content="2019-12-14T01:16:27.433Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="夏虫语冰 | blog" type="application/atom+xml">
@@ -229,7 +229,7 @@ var _hmt = _hmt || [];
 <a id="more"></a>
 
 <p>Docker容器: </p>
-<p>是在操作系统层面上实现虚拟化, 直接复用本地主机的操作系统, 而传统虚拟机则是在硬件层面实现虚拟化, 启动速度快, 占用体积小</p>
+<p>是在操作系统层面上实现虚拟化, 直接<strong>复用本地主机的操作系统</strong>, 而传统虚拟机则是在硬件层面实现虚拟化, 启动速度快, 占用体积小</p>
 <p>Docker组成: Docker守护进程, 仓库, 镜像, 容器, Docker客户端</p>
 <br>
 
@@ -237,7 +237,7 @@ var _hmt = _hmt || [];
 
 <h2 id="1-Docker安装与启动"><a href="#1-Docker安装与启动" class="headerlink" title="1. Docker安装与启动"></a>1. Docker安装与启动</h2><p><strong>Docker安装</strong></p>
 <p>以下是在CentOS7中安装Docker的步骤:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1、yum 包更新到最新 </span></span><br><span class="line">sudo yum update </span><br><span class="line"></span><br><span class="line"><span class="comment"># 2、作用：安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</span></span><br><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2 </span><br><span class="line"></span><br><span class="line"><span class="comment"># 3、 设置yum源 </span></span><br><span class="line"><span class="comment"># 3.1、方案一：使用ustc的（推荐） </span></span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.ustc.edu.cn/docker- ce/linux/centos/docker-ce.repo </span><br><span class="line"><span class="comment"># 3.2、方案二：使用阿里云（可能失败） </span></span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker- ce/linux/centos/docker-ce.repo </span><br><span class="line"></span><br><span class="line"><span class="comment"># 4、 安装docker；出现输入的界面都按 y </span></span><br><span class="line">sudo yum install -y docker-ce</span><br><span class="line"></span><br><span class="line"><span class="comment"># 5、 查看docker版本 </span></span><br><span class="line">docker -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 0. 首先保证自己电脑的虚拟网卡为NAT模式</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1、yum 包更新到最新 </span></span><br><span class="line">sudo yum update </span><br><span class="line"></span><br><span class="line"><span class="comment"># 2、作用：安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</span></span><br><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2 </span><br><span class="line"></span><br><span class="line"><span class="comment"># 3、 设置yum源 </span></span><br><span class="line"><span class="comment"># 3.1、方案一：使用ustc的（推荐） </span></span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.ustc.edu.cn/docker- ce/linux/centos/docker-ce.repo </span><br><span class="line"><span class="comment"># 3.2、方案二：使用阿里云（可能失败） </span></span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker- ce/linux/centos/docker-ce.repo </span><br><span class="line"></span><br><span class="line"><span class="comment"># 4、 安装docker；出现输入的界面都按 y </span></span><br><span class="line">sudo yum install -y docker-ce</span><br><span class="line"></span><br><span class="line"><span class="comment"># 5、 查看docker版本 </span></span><br><span class="line">docker -v</span><br></pre></td></tr></table></figure>
 
 
 
@@ -323,6 +323,8 @@ var _hmt = _hmt || [];
 
 
 
+
+
 <br>
 
 <br>
@@ -360,6 +362,27 @@ var _hmt = _hmt || [];
 
 </li>
 </ol>
+<br>
+
+<br>
+
+<p>6.迁移与备份</p>
+<br>
+
+<br>
+
+
+
+<p>7.docker-compose</p>
+<br>
+
+<br>
+
+
+
+
+
+<p>8.Dockerfile</p>
 <br>
 
 <br>
@@ -418,7 +441,7 @@ var _hmt = _hmt || [];
     2019-12-12
     <br>
     <strong class="update-time">最后更新：</strong>
-    2019-12-13
+    2019-12-14
     <br>
     <strong class="article-titles">本文标题：</strong>
     <a href="https://shiyongxu.github.io/2019/12/12/Docker/" title="Docker入门" target="_blank">Docker入门</a>
@@ -521,11 +544,11 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2019/12/14/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF-day01/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/14/Swagger/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          学成在线-day01
+          Swagger
         
       </div>
     </a>
@@ -705,6 +728,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">xczx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">swagger</a>
               </li>
             
             <div class="clearfix"></div>
