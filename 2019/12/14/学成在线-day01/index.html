@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="夏虫语冰 | blog">
 <meta property="og:description" content="项目概述 学成在线项目借鉴了MOOC（大型开放式网络课程，即MOOC（massive open online courses））的设计思想，是一个提供IT职业课程在线学习的平台，它为即将和已经加入IT领域的技术人才提供在线学习服务，用户通过在线学习、在线练习、在线考试等学习内容，最终掌握所学的IT技能，并能在工作中熟练应用。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-14T12:56:18.325Z">
+<meta property="og:updated_time" content="2019-12-14T13:28:03.449Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="夏虫语冰 | blog" type="application/atom+xml">
@@ -269,7 +269,8 @@ var _hmt = _hmt || [];
 <p>3.在nginx中配置虚拟主机： </p>
 <p>nginx.conf配置文件</p>
 <p>E:/xc/xcEduUI/xc-ui-pc-startic-portal/ 本目录即为门户的主目录。 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/*</span></span><br><span class="line"><span class="comment">server&#123;</span></span><br><span class="line"><span class="comment">    listen       80;</span></span><br><span class="line"><span class="comment">    server_name  www.xuecheng.com;</span></span><br><span class="line"><span class="comment">    ssi on;	#在nginx虚拟主机中开通SSI</span></span><br><span class="line"><span class="comment">    ssi_silent_errors on;	#设置为on则在处理SSI文件出错时不输出错误信息</span></span><br><span class="line"><span class="comment">    location / &#123;</span></span><br><span class="line"><span class="comment">        alias   F:/teach/xcEdu/xcEduUI/xc-ui-pc-static-portal/;</span></span><br><span class="line"><span class="comment">        index  index.html;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<p>访问nginx  <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a>  即可访问到该门户网站</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/*</span></span><br><span class="line"><span class="comment">server&#123;</span></span><br><span class="line"><span class="comment">    listen       80;</span></span><br><span class="line"><span class="comment">    server_name  www.xuecheng.com;</span></span><br><span class="line"><span class="comment">    ssi on;	#在nginx虚拟主机中开通SSI</span></span><br><span class="line"><span class="comment">    ssi_silent_errors on;	#设置为on则在处理SSI文件出错时不输出错误信息</span></span><br><span class="line"><span class="comment">    location / &#123;</span></span><br><span class="line"><span class="comment">        alias   E:/xc/xcEduUI/xc-ui-pc-startic-portal/;</span></span><br><span class="line"><span class="comment">        index  index.html;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
 <p>修改之后重新加载配置文件: 当前位置打开命令行输入  nginx.exe -s reload</p>
 <p>4.配置hosts文件 </p>
@@ -438,6 +439,15 @@ var _hmt = _hmt || [];
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/12/22/java%E7%A8%8B%E5%BA%8F%E6%8A%A5%E9%94%99-Could%20not%20resolve%20type%20alias/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          java程序报错-Could not resolve type alias
+        
+      </div>
+    </a>
   
   
     <a href="/2019/12/14/Swagger/" id="article-nav-older" class="article-nav-link-wrap">
